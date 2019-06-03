@@ -1,0 +1,404 @@
+
+
+<html>
+<head>
+<STYLE type='text/css'>
+#triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 100px solid red;
+      border-bottom: 50px solid transparent;
+      transform: scale(0.5);
+      position: absolute;
+      left: 5%;
+      top: 40%;
+      z-index: 1;
+    }
+#triangle-left:hover {
+      border-right: 100px solid green;
+     
+    }
+  #triangle-right {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 100px solid red;
+      border-bottom: 50px solid transparent;
+      transform: scale(0.5);
+       position: absolute;
+       left: 90%;
+       top: 40%;
+       z-index: 1;
+    }
+  #triangle-right:hover {
+      border-left: 100px solid green;
+
+    }
+  #section1{
+  	position: absolute;
+  	opacity: 1;
+  	width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  }  
+   #section2{
+  	position: absolute;
+  	opacity: 0;
+  		width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  }  
+  #section3{
+  	position: absolute;
+  	opacity: 0;
+  		width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  }  
+  #section4{
+  	position: absolute;
+  	opacity: 0;
+  		width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  }
+  #section5{
+  	position: absolute;
+  	opacity: 0;
+  		width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  } 
+   #section6{
+  	position: absolute;
+  	opacity: 0;
+  	width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  } 
+  #section7{
+  	position: absolute;
+  	opacity: 0;
+  	width: 70%;
+  	border: black solid 2px;
+  	margin-left: 16%;
+  	top: 30%;
+  	-webkit-transition:  opacity 2s ease;
+	-moz-transition: opacity 2s ease;
+	-o-transition: opacity 2s ease;
+	transition: opacity 2s ease;
+  }    
+  	#topbox{
+width:101%;
+height:20%;
+background-color:blue;
+position: fixed;
+top: 0%;
+left: -1%;
+z-index:2;
+}
+</STYLE>
+</head>
+
+<body bgcolor='white'>
+	<div id='topbox'></div>
+	<IMG src='stoopid 50.png' width='75' style='position: fixed;z-index:3;'>
+	<SPAN style='z-index:3; font-size: 30px; color: white;font-family:THE AMAZING SPIDER-MAN Regular;padding-left: 40%; padding-top: 15px;position: fixed;'>How to socialize!</SPAN>
+
+	
+
+<SCRIPT>
+	var selected=0;
+</SCRIPT>
+  <DIV id='triangle-left' onclick="
+  		selected=selected-1;
+  		if(selected<0)
+  			selected=6;
+  		if(selected==0){
+  			document.getElementById('section1').style.opacity='1';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==1){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='1';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==2){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='1';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==3){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='1';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==4){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='1';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==5){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='1';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==6){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='1';
+  		}
+  		else{
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='1';
+  		}
+		"></DIV>
+  <DIV id='triangle-right' onclick="
+  		selected=selected+1;
+  		if(selected>6)
+  			selected=0;
+  		if(selected==0){
+  			document.getElementById('section1').style.opacity='1';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==1){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='1';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==2){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='1';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==3){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='1';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==4){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='1';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==5){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='1';
+  			document.getElementById('section7').style.opacity='0';
+  		}
+  		else if(selected==6){
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='1';
+  		}
+  		else{
+  			document.getElementById('section1').style.opacity='0';
+  			document.getElementById('section2').style.opacity='0';
+  			document.getElementById('section3').style.opacity='0';
+  			document.getElementById('section4').style.opacity='0';
+  			document.getElementById('section5').style.opacity='0';
+  			document.getElementById('section6').style.opacity='0';
+  			document.getElementById('section7').style.opacity='1';
+  		}
+		"></DIV>
+<td>
+<table id="section1">
+  <tr><td>
+  	Section one:
+One of the most important things that you need to do while socializing and making friends is starting a conversation and you can start a conversation in various different ways. For example you can ask someone if they watch a TV show that you watch and if they watch it then you can chat with them about it.  You might feel like this is weird and you don&#8217;t think that socializing is fun or required. But scientists and experts actually found out that people that socialize are usually depressed and have suicidal thoughts. People that are depressed usually feel and want to suicide because they think that they have nothing to lose. So as you can tell socializing is a big part in your life and it is actually crucial to you in life.
+</td></tr>
+<tr><td>
+<img src="stoopid.jpg" width='200'>
+</td></tr>
+</table>
+
+<table id="section2">
+  <tr><td>
+Section two:
+First of all if you want to be successful in socializing you will have to have a conversation starter. If you socialize with someone and you can&#8217;t force them to socialize with you and making friends usually takes time, so you can&#8217;t just rush your friendship. Try to go out with people that invite you, and you might be able to make friends with them. try talking to rando people to make friends. When you are discouraged try even harder and set goals for yourself. Also remember to never push yourself too hard, you will only put pressure on yourself and it won&#8217;t help you at all.           Bibliography/citation: 
+</td></tr>
+
+<tr><td>
+<img src="stoopid 2.jpg" width='560'>
+</td></tr>
+
+</table>
+
+<table id="section3">
+  <tr><td>
+Section three:
+There are also bad friends or toxic friends that act friendly, but are actually there to make you fail. You need to be careful of these types of people because they will act nice and when you two become friends the person will use you and start discouraging you. This will definitely make you want to socialize less. A way to be able to spot a toxic friend is by looking at their behavior, toxic friends are usually trying to control you and when someone more interesting comes along they usually goes and be friends with that person. Toxic friends will also be blaming and in a good friendship friends can forgive one another,but in a toxic friendship the person will blame you and usually make you feel powerless and guilty.
+</td></tr>
+<tr>
+<td>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/774HJQ9AdRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='position: absolute; z-index: 10;'></iframe> 
+</td></tr>
+</table>
+
+<table id="section4">
+  <tr>
+<td>
+section four:
+There are many ways to socialize and you can even socialize online! For example: chatting with random people online and talking to them. I met my online friends by playing video games and talking more and playing with them more often and adding there social media. Of Course this is not  as effective as going out and talking to other people in person, but you can still make online friends.
+</td></tr>
+<td>
+<img src="stoopid 100.jpg">
+</td>
+  </table>
+  <table id="section5">
+    <tr><td>
+Section five:
+When you are making friends or socializing you will need to give a good first impression and this is important because people can be discouraged to talk to you because of your first impressions to them. When you socialize you want to make the person you are socializing with feel like the conversation is interesting and they won’t feel obligated to talk to you and would want to talk to you. Lastly be confident in yourself you don’t want to act weird to anyone and that will just push other people away.
+</td></tr>
+<tr><td>
+<img src="stoopid 11.jpg" width=560>
+</td>
+</tr>
+<tr><td>
+<img src="stoopid 10.png" width=560>
+</td></tr>
+ </table>
+<td>
+ <table id="section6">
+ </td> <tr><td>
+ Section six:
+Now you have a good friend to talk to and you will also want to be a good friend, and not be a mean toxic friend.  A good friend helps you and encourages you on everything, even if you get a bad score on a assignment or test, they are always there for you if you need them they are there to help.
+</td></tr>
+<tr><td>
+ <img src="stoopid 6.png" width=560>
+</tr></td>
+ </table>
+
+<table id="section7" width=560>
+ </td> <tr><td>
+
+Citation:
+Steber, Carolyn. How To Socialize Better If You're An Introvert. Bustle, Bustle, 7 May 2019, www.bustle.com/articles/173730-11-tips-for-making-socializing-easier-if-youre-an-introvert.
+<BR>
+<BR>
+Hurst, K., & Hurst, K. (2019, April 03). 8 Signs Of A Toxic Friendship That You Need To Let Go Of Now. Retrieved from http://www.thelawofattraction.com/identify-toxic-friendship/
+<BR>
+<BR>
+Toshiba 55" Class LED 2160p Smart 4K UHD TV with HDR Fire TV Edition 55LF621U19. (n.d.). Retrieved from https://www.bestbuy.com/site/toshiba-55-class-led-2160p-smart-4k-uhd-tv-with-hdr-fire-tv-edition/6194911.p?skuId=6194911
+<BR>
+<BR>
+Untitled Haiku Deck - A Haiku Deck by Kyle manny. (2019). Retrieved from https://www.haikudeck.com/untitled-haiku-deck-education-presentation-to0UxmlxWU
+<BR>
+<BR>
+How to Socialize with Strangers: 9 Quick Tricks. (2019, April 17). Retrieved from https://socialpronow.com/blog/socialize-with-strangers/
+<BR>
+<BR>
+10 Annotated Bibliography. (n.d.). Retrieved from https://www.template.net/business/bibliography-templates/freeannotated-bibliography/
+<BR>
+<BR>
+Aguirre, S. (2018, December 10). How to Deep Clean a Master Bedroom. Retrieved from https://www.thespruce.com/master-bedroom-intense-cleanup-1900309
+<BR>
+<BR>
+Jamie, Fatima, A., Jamie, Patrick, Kumar, N., Jamie, . . . Megha Panda. (2019, April 14). 60 Social Networking Sites You Need to Know About in 2019. Retrieved from https://makeawebsitehub.com/social-media-sites/
+<BR>
+<BR>
+CS:GO Prime Status Upgrade on Steam. (2019). Retrieved from https://store.steampowered.com/sub/54029/
+<BR>
+<BR>
+</td></tr>
+<tr><td>
+ <img src="stoopid 5.jpg" width=560>
+</tr></td>
+ </table>
+
+</body>
+
